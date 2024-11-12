@@ -1,0 +1,125 @@
+/* styles.css */
+
+/* Estilo principal del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Fondo gris claro */
+    background-image: url('fondo.jpg'); /* Añade la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir toda la pantalla */
+    background-position: center;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 100%; /* Elimina el ancho máximo del contenedor */
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #333333; /* Gris oscuro para mejor legibilidad */
+    animation: fadeIn 1s ease-in; /* Animación de entrada */
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555555; /* Gris medio para el texto del párrafo */
+    animation: fadeIn 1.5s ease-in; /* Animación de entrada */
+}
+
+/* Estilos para los candidatos */
+#candidatos {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Margen entre las fotos */
+    animation: fadeIn 2s ease-in; /* Animación de entrada */
+}
+
+.candidato {
+    position: relative;
+    display: inline-block;
+}
+
+.candidato input[type="checkbox"] {
+    display: none; /* Oculta los checkboxes */
+}
+
+.candidato img {
+    width: 200px; /* Aumenta el tamaño de la imagen */
+    height: 300px; /* Altura mayor para crear un formato rectangular */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el efecto de zoom y sombra */
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+    animation: fadeIn 2.5s ease-in; /* Animación de entrada */
+}
+
+/* Zoom al pasar el cursor */
+.candidato img:hover,
+.candidato input[type="checkbox"]:checked + img {
+    transform: scale(1.05); /* Mantiene la escala al 105% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra al pasar el cursor */
+}
+
+/* Efecto visual de selección */
+.candidato input[type="checkbox"]:checked + img {
+    background-color: rgba(0, 0, 255, 0.4); /* Fondo azul semitransparente */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Añade la transición de zoom */
+    filter: brightness(0.5); /* Oscurece la imagen un poco */
+}
+
+/* Estilo del botón */
+#voteButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    animation: fadeIn 3s ease-in; /* Animación de entrada */
+}
+
+#voteButton:hover {
+    background-color: #45a049;
+    animation: pulse 1s infinite; /* Animación de pulso al pasar el cursor */
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333333; /* Gris oscuro para el texto del mensaje */
+    animation: fadeIn 3.5s ease-in; /* Animación de entrada */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

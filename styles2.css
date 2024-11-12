@@ -1,0 +1,138 @@
+/* styles2.css */
+
+/* Incluir la fuente Nerd Hasklug */
+@font-face {
+    font-family: 'Nerd Hasklug';
+    src: url('fonts/NerdHasklug-Regular.ttf') format('truetype'); /* Ajusta el nombre y la extensión según el archivo de la fuente */
+}
+
+/* Estilo principal del cuerpo */
+body {
+    font-family: 'Nerd Hasklug', Arial, sans-serif; /* Aplicar la fuente Nerd Hasklug */
+    background-color: #001f3f; /* Fondo azul oscuro */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para la pantalla de bienvenida */
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #001f3f; /* Fondo azul oscuro */
+    border-bottom: 5px solid #006400; /* Línea verde oscuro */
+}
+
+.welcome h1 {
+    color: #ffffff; /* Blanco para el título */
+    margin-bottom: 10px;
+    font-size: 3em; /* Tamaño grande para el título */
+    font-weight: bold; /* Negrita */
+}
+
+.welcome p {
+    color: #ffffff; /* Blanco para el texto */
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Tamaño del texto de la biografía */
+    font-weight: bold; /* Negrita */
+}
+
+.welcome a {
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Nerd Hasklug', Arial, sans-serif; /* Aplicar la fuente Nerd Hasklug */
+    font-weight: bold; /* Negrita */
+    font-size: 1.2em; /* Tamaño del texto del enlace */
+}
+
+.welcome a:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para la sección adicional */
+.content {
+    padding: 20px;
+    background-color: #001f3f; /* Fondo azul oscuro */
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    min-height: 300px; /* Asegura suficiente espacio para desplazar */
+}
+
+.section h2 {
+    color: #ffffff;
+    font-size: 2.5em; /* Tamaño grande para los subtítulos */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 20px;
+}
+
+.text-left {
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 20px; /* Añadir margen izquierdo */
+    font-family: 'Nerd Hasklug', Arial, sans-serif; /* Aplicar la fuente Nerd Hasklug */
+    font-size: 1.2em; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+}
+
+.youtube-thumbnails {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 20px;
+}
+
+.youtube-thumbnails img {
+    max-width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto hover */
+}
+
+.youtube-thumbnails img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+}
+
+/* Animación fade-in */
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Estilo para la sección de contacto e información */
+.contact-info {
+    padding: 20px;
+    background-color: #001a33; /* Fondo azul más oscuro */
+    text-align: center;
+    color: #ffffff;
+}
+
+.contact-info h2 {
+    font-size: 2em; /* Tamaño grande para el subtítulo */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.2em; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 10px;
+}

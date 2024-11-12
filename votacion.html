@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votación - Elige tus Candidatos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Título de la página -->
+        <h1>Votación para Premios</h1>
+
+        <!-- Pregunta para los usuarios -->
+        <p>¿A quién te gustaría votar?</p>
+
+        <!-- Lista de candidatos con imágenes -->
+        <div id="candidatos">
+            <label class="candidato">
+                <input type="checkbox" name="candidato" value="1">
+                <img src="1voto.png" alt="Candidato 1">
+            </label>
+            <label class="candidato">
+                <input type="checkbox" name="candidato" value="2">
+                <img src="2voto.png" alt="Candidato 2">
+            </label>
+            <label class="candidato">
+                <input type="checkbox" name="candidato" value="3">
+                <img src="3voto.png" alt="Candidato 3">
+            </label>
+            <label class="candidato">
+                <input type="checkbox" name="candidato" value="4">
+                <img src="4voto.png" alt="Candidato 4">
+            </label>
+            <label class="candidato">
+                <input type="checkbox" name="candidato" value="5">
+                <img src="5voto.png" alt="Candidato 5">
+            </label>
+        </div>
+
+        <!-- Botón para enviar la votación -->
+        <button id="voteButton">Votar</button>
+
+        <!-- Mensaje de confirmación o error -->
+        <div id="message"></div>
+    </div>
+</body>
+</html>

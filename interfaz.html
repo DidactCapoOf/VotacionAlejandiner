@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida - Votación de Premios Alejawards</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- Contenedor de bienvenida -->
+    <div class="welcome">
+        <h1>Bienvenido a la Votación de Premios Alejawards</h1>
+        <p>Qué pasa chavales bienvenidos a un nuevo vídeo de los premios Awards de alejandro, aquí es donde se 
+        celebrará los premios alejandros, si quiere mas información del lore Alejander, vaya abajo para mas información</p>
+        <a href="votacion.html" id="voteLink">Ir a la Votación</a>
+    </div>
+
+    <!-- Contenido adicional con animación fade-in -->
+    <div class="content">
+        <div class="section fade-in">
+            <h2></h2>
+            <div class="text-left">
+                <p>El lore alejandriner es muy extenso y puede llevar mucho tiempo recopilar la información. Por suerte, hemos recopilado la información necesaria y la hemos adjuntado en un vídeo llamado "El Iceberg de Alejandro". Dicho Iceberg trata de resumir casi todo el lore, aunque falta mucha más información porque no está completo del todo. De todos modos, el Iceberg da la suficiente información para saber todo el lore del grupo pistachito. Es posible que en un futuro el vídeo se vaya abajo porque la información que contiene es demasiado tenebrosa. Recuerden que nadie de nosotros se hace responsable de posibles traumas. Si quieren información detallada, recuerden preguntarnos.</p>
+            </div>
+            <div class="youtube-thumbnails">
+                <a href="https://youtu.be/J5Ct_7olPTs" target="_blank">
+                    <img src="miniatura.png" alt="Video 1">
+                </a>
+            </div>
+        </div>
+        <div class="section fade-in">
+            <h2></h2>
+            <div class="text-left">
+                <p>Dopaminer Playlist es un mix de todas las canciones alejandrinas que hicimos a lo largo de los años, contiene una gran variedad de canciones, algunas relacionadas con Alejandro, otras con Atenea, entre muchos otros. Es cuestión de explorar; sin embargo, el tema más legendario es "Esto es por Alejandro", una leyenda entre el grupo alejandrino, concretamente en el minuto <a href="https://youtu.be/SKEOK5SdsI4?t=590" target="_blank">9:50</a>.</p>
+            </div>
+            <div class="youtube-thumbnails">
+                <a href="https://www.youtube.com/watch?v=video_id1" target="_blank">
+                    <img src="miniatura2.png" alt="Video 1">
+                </a>
+            </div>
+            <div class="text-left">
+                <p>La primera partida del Apex Legends es un tema bastante serio, oculto y tenebroso. El caso es bastante perturbador donde un ser omnipresente pudo exponer a Alejandro. Por desgracia, no se sabe quién expuso los casos, pero el vídeo está resubido y oculto para que Alejandro no lo silencie. Recuerden no hablar de este tema a Alejandro por motivos obvios. No nos hacemos responsables de posibles desapariciones, véanlo con discreción.</p>
+            </div>
+            <div class="youtube-thumbnails">
+                <a href="https://youtu.be/LySgOG0Ak5U" target="_blank">
+                    <img src="miniatura3.png" alt="Video 1">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de contacto e información -->
+    <div class="contact-info">
+        <h2>Contacto y Soporte</h2>
+        <p>Email: dantdm415@gmail.com</p>
+        <p>Soporte: support@atproducts.xyz</p>
+        <p>Mande un correo si necesita soporte, recuerda que pasar fotos explícitas esta permitido</p>
+    </div>
+
+    <script>
+        // Script para añadir clase fade-in cuando el elemento es visible
+        document.addEventListener('scroll', function() {
+            document.querySelectorAll('.fade-in').forEach(function(element) {
+                if (element.getBoundingClientRect().top < window.innerHeight) {
+                    element.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
